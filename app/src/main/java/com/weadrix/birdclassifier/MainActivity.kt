@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
             return@setOnLongClickListener true
         }
     }
-
+    
     private val requestPermissionLaunch = registerForActivityResult(ActivityResultContracts.RequestPermission()){isGranted:Boolean ->
         if (isGranted){
             AlertDialog.Builder(this).setTitle("Download Imgae?")
