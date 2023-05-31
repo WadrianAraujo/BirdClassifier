@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         buttonLoad.setOnClickListener{
-            if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED){
+            if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.READ_MEDIA_IMAGES) == PackageManager.PERMISSION_GRANTED){
                  val intent = Intent(Intent.ACTION_PICK,MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
                 intent.type = "image/*"
                 val mimeType = arrayOf("image/jpeg","image/png","image/jpg")
@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
                 intent.flags = Intent.FLAG_GRANT_READ_URI_PERMISSION
                 onResult.launch(intent)
             }else{
-                requestPermission.launch(android.Manifest.permission.READ_EXTERNAL_STORAGE)
+                requestPermission.launch(android.Manifest.permission.READ_MEDIA_IMAGES)
             }
         }
 
