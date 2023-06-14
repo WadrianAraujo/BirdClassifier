@@ -75,10 +75,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        imageView.setOnLongClickListener{
+        // Save image in storage
+        /*imageView.setOnLongClickListener{
             requestPermissionLaunch.launch(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
             return@setOnLongClickListener true
-        }
+        }*/
     }
     
     private val requestPermissionLaunch = registerForActivityResult(ActivityResultContracts.RequestPermission()){isGranted:Boolean ->
