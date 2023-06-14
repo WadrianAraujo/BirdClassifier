@@ -8,14 +8,13 @@
 
     <Button
         android:id="@+id/btn_load_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="252dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="10dp"
         android:text="LOAD IMAGE"
-        android:layout_marginTop="18dp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        />
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/btn_capture_image" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -31,26 +30,25 @@
 
     <Button
         android:id="@+id/btn_capture_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TAKE IMAGE"
+        android:layout_width="252dp"
+        android:layout_height="58dp"
         android:layout_marginTop="18dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        />
+        android:text="TAKE IMAGE"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="36dp"
         android:text="Output: "
         android:textColor="@color/black"
         android:textSize="21sp"
-        android:layout_marginTop="24dp"
-        android:layout_marginStart="36dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_capture_image"
+        app:layout_constraintTop_toBottomOf="@+id/btn_load_image"
 
         />
 
@@ -59,17 +57,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Result here"
-        android:textColor="@android:color/holo_red_dark"
+        android:textColor="@android:color/holo_blue_dark"
         android:textSize="21sp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintStart_toEndOf="@id/textView"
-        app:layout_constraintTop_toBottomOf="@id/btn_capture_image"
-        />
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click on the result text to search on Google"
+        android:text="Click in text to more information of bird"
         android:textSize="13sp"
         android:layout_marginTop="8dp"
         android:layout_marginStart="36dp"
