@@ -18,8 +18,6 @@ O aplicativo oferece as seguintes funcionalidades:
 - Dispositivo Android com a versão mínima 7.0.1
 - Câmera para captura de imagens (opcional)
 
-5. Execute o aplicativo no dispositivo ou emulador Android.
-
 ## Uso do Aplicativo
 
 1. Ao abrir o aplicativo, você será apresentado à tela principal.
