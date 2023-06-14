@@ -2,6 +2,11 @@
 
 Este é um aplicativo Android desenvolvido em Kotlin que utiliza o TensorFlow Lite para realizar a classificação de pássaros. O modelo de classificação utilizado é o [aiy/vision/classifier/birds_V1/3](https://tfhub.dev/google/lite-model/aiy/vision/classifier/birds_V1/3) disponibilizado pelo TensorFlow Hub.
 
+<p align="center">
+   <img src="https://github.com/WadrianAraujo/WadrianAraujo/blob/74b4f135f5a61fa44972d04543b503d0eedd4733/ImagesForReadMe/BirdClassifier/BirdClassifierHome2.jpg" width="300" style="margin-left: 20px;:"> 
+   <img src="https://github.com/WadrianAraujo/WadrianAraujo/blob/74b4f135f5a61fa44972d04543b503d0eedd4733/ImagesForReadMe/BirdClassifier/BirdClassifierHome1.jpg" width="300" style="margin-right: 20px;">
+</p>
+
 ## Funcionalidades
 
 O aplicativo oferece as seguintes funcionalidades:
